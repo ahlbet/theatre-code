@@ -8,8 +8,7 @@ class Contact extends Component {
         <div className="contact-wrap">
           <h3>Contact</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Theatre and Code is currently open to collaborations! Do you have a theatre project that could benefit from code? Are you a programmer interested in including theatre in your software? We would love to chat.
           </p>
           <a href="mailto:dm.stratton94@gmail.com">dm.stratton94@gmail.com</a>
         </div>
