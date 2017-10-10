@@ -18,7 +18,7 @@ class Projects extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <Link to="/project-1">Check out Project One!</Link>
+              <Link to="/448/">Check out Project One!</Link>
             </div>
             <div className="project">
               <img src={project2} alt="Project Image" />
