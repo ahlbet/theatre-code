@@ -18,7 +18,7 @@ class Dream extends Component {
           <div className="dream-col2">
             <img src={theatreDream} alt="Theatre Dream" />
             <p>
-              How does the theatrical process alter the way software is developed, if at all? Codebases are often structured in an organized way - separating the CSS from the JS from images. Can a software developer learn anything about structuring code from the theatrical concepts of rehearsal, blocking, or various acting techniques? The theatre is based in the idea of performing Other - is there a way that software mirrors this idea when one writes code that another person will use?
+              How does the theatrical process alter the way software is developed, if at all? Codebases are often structured in an organized way - separating the CSS from the JS from the images. Can a software developer learn anything about structuring code from the theatrical concepts of rehearsal, blocking, or various acting techniques? The theatre is based in the idea of performing Other - is there a way that software mirrors this idea when one writes code that another person will use?
             </p>
           </div>
         </div>

@@ -15,8 +15,7 @@ class Projects extends Component {
             <div className="project">
               <img src={thumbnail448} alt="Project Image" />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                The production of <em>4.48 Psychosis</em>, a play by Sarah Kane, at the Phoenix Theater in Minneapolis used projections written in JavaScript and p5.js.
               </p>
               <Link to="/448/">Check out 4.48 Psychosis!</Link>
             </div>
