@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Link from "gatsby-link";
 
-import project from "../assets/images/project.jpg";
+import thumbnail448 from "../assets/images/448-thumbnail.jpg";
 import project2 from "../assets/images/project2.jpg";
 import project3 from "../assets/images/project3.jpg";
 
@@ -13,7 +13,7 @@ class Projects extends Component {
           <h3>Projects</h3>
           <div className="projects-grid">
             <div className="project">
-              <img src={project} alt="Project Image" />
+              <img src={thumbnail448} alt="Project Image" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
