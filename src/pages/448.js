@@ -29,13 +29,13 @@ const FourFourEight = () => (
 
       <Opening1 />
       <hr />
-      {/* <Opening2 /> */}
+      <Opening2 />
       <hr />
-      {/* <Opening3 /> */}
+      <Opening3 />
       <hr />
-      {/* <Abstraction /> */}
+      <Abstraction />
       <hr />
-      {/* <Letter /> */}
+      <Letter />
 
       <Link to="/#projects">Back to projects</Link>
     </div>
