@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Link from 'gatsby-link';
+import React, { Component } from "react";
+import Link from "gatsby-link";
 
-import project from '../assets/images/project.jpg';
-import project2 from '../assets/images/project2.jpg';
-import project3 from '../assets/images/project3.jpg';
+import project from "../assets/images/project.jpg";
+import project2 from "../assets/images/project2.jpg";
+import project3 from "../assets/images/project3.jpg";
 
 class Projects extends Component {
   render() {
@@ -18,7 +18,7 @@ class Projects extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <Link to="/project-1">Check it out!</Link>
+              <Link to="/project-1">Check out Project One!</Link>
             </div>
             <div className="project">
               <img src={project2} alt="Project Image" />
@@ -26,7 +26,7 @@ class Projects extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <Link to="/{project}">Check it out!</Link>
+              <Link to="/{project}">Check out Project Two!</Link>
             </div>
             <div className="project">
               <img src={project3} alt="Project Image" />
@@ -34,7 +34,7 @@ class Projects extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <Link to="/{project}">Check it out!</Link>
+              <Link to="/{project}">Check out Project 3!</Link>
             </div>
           </div>
         </div>
