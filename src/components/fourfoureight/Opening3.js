@@ -36,7 +36,7 @@ class Opening3 extends Component {
             src={opening3}
           />
 
-          <button id="opening3-toggle" onClick={this.toggleCode}>
+          <button id="opening3-toggle" className="code-toggle" onClick={this.toggleCode}>
             Show/Hide Code
           </button>
 

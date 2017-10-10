@@ -3,7 +3,19 @@ import Link from "gatsby-link";
 
 import abstractionMovie from "../../assets/images/fourfoureight/abstraction.mp4";
 
+import Highlight from 'react-highlight.js';
+
 class Abstraction extends Component {
+
+  toggleCode() {
+    const code = document.getElementById('abstraction-code');
+    if (code.style.display === 'none'){
+      code.style.display = 'block';
+    } else {
+      code.style.display = 'none';
+    }
+  }
+
   render() {
     return (
       <div>
@@ -23,6 +35,18 @@ class Abstraction extends Component {
             controls="controls"
             src={abstractionMovie}
           />
+
+          <button id="abstraction-toggle" className="code-toggle" onClick={this.toggleCode}>
+            Show/Hide Code
+          </button>
+
+          <div id="abstraction-code" style={{display: 'none'}}>
+            <Highlight language={'javascript'}>
+              {`
+              `}
+            </Highlight>
+
+          </div>
         </div>
       </div>
     );

@@ -4,6 +4,7 @@ import Link from "gatsby-link";
 import opening1 from "../../assets/images/fourfoureight/opening1.mp4";
 
 import Highlight from 'react-highlight.js';
+// import toggleCode from '../../assets/utils/toggleCode';
 
 class Opening1 extends Component {
   toggleCode() {
@@ -36,7 +37,7 @@ class Opening1 extends Component {
             src={opening1}
           />
 
-          <button id="opening1-toggle" onClick={this.toggleCode}>
+          <button id="opening1-toggle" className="code-toggle" onClick={this.toggleCode}>
             Show/Hide Code
           </button>
 

@@ -3,7 +3,19 @@ import Link from "gatsby-link";
 
 import letter from "../../assets/images/fourfoureight/letter.mp4";
 
+import Highlight from 'react-highlight.js';
+
 class Letter extends Component {
+
+  toggleCode() {
+    const code = document.getElementById('letter-code');
+    if (code.style.display === 'none'){
+      code.style.display = 'block';
+    } else {
+      code.style.display = 'none';
+    }
+  }
+
   render() {
     return (
       <div>
@@ -24,6 +36,19 @@ class Letter extends Component {
             width="600px"
             src={letter}
           />
+
+          <button id="letter-toggle" className="code-toggle" onClick={this.toggleCode}>
+            Show/Hide Code
+          </button>
+
+          <div id="letter-code" style={{display: 'none'}}>
+            <Highlight language={'javascript'}>
+              {`
+              `}
+            </Highlight>
+
+          </div>
+
         </div>
       </div>
     );
