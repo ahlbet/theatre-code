@@ -1,17 +1,24 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
 const Blog = ({ data }) => (
-  <div style={{textAlign: 'center'}}>
-    <h1>Blog currently under construction!</h1>
-    <h3>Check back later and it just might be finished!</h3>
-    <h2>Index</h2>
-    {data.allMarkdownRemark.edges.map(post => (
-      <Link key={post.node.id} to={post.node.frontmatter.path}>
-        {post.node.frontmatter.title}
-      </Link>
-    ))}
-    <Link to="/">Go back to the homepage</Link>
+  <div>
+    <div className="blog-wrap">
+      <Link to="/">Back to homepage</Link>
+      <h1>Blog currently under construction!</h1>
+      <h2>Posts</h2>
+      <div className="posts-wrap">
+        {data.allMarkdownRemark.edges.map(post => (
+          <Link key={post.node.id} to={post.node.frontmatter.path}>
+            {post.node.frontmatter.title}
+            {/* {post.node.frontmatter.thumbnail} */}
+          </Link>
+        ))}
+        {/* <img src={post.node.frontmatter.thumbnail} /> */}
+      </div>
+      <Link to="/">Back to homepage</Link>
+    </div>
   </div>
 );
 
@@ -24,6 +31,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            indexImage {
+              id
+            }
           }
         }
       }

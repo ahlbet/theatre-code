@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Theatre and Code`
   },
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`,
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
         resolve: "gatsby-source-filesystem",
         options: {
@@ -11,5 +13,8 @@ module.exports = {
         }
       },
       `gatsby-transformer-remark`
+      // `gatsby-transformer-sharp`,
+      // `gatsby-plugin-sharp`
+
     ]
 };
