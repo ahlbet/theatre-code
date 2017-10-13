@@ -11,10 +11,11 @@ const Blog = ({ data }) => (
       <div className="posts-wrap">
         <ul>
           {data.allMarkdownRemark.edges.map(post => (
-            <li>
+            <li className="post-wrap">
               <Link key={post.node.id} to={post.node.frontmatter.path}>
                 {post.node.frontmatter.title}
               </Link>
+              <img className="blog-thumbnail" src={ post.node.frontmatter.indexImage.childImageSharp.responsiveSizes.src } />
             </li>
           ))}
         </ul>
@@ -39,7 +40,11 @@ export const pageQuery = graphql`
             title
             path
             indexImage {
-              id
+              childImageSharp{
+                responsiveSizes (maxWidth: 600) {
+                  src
+                }
+              }
             }
           }
         }

@@ -16,7 +16,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               title
               date
               indexImage {
-                id
+                childImageSharp{
+                  responsiveSizes (maxWidth: 800) {
+                    src
+                  }
+                }
               }
             }
           }

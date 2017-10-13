@@ -7,11 +7,14 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data;
   return (
     <div>
-      <h1>{post.frontmatter.title}</h1>
-      {/* <img src={ post.frontmatter.indexImage.id.src } alt={ post.frontmatter.indexImage.id.src }></img> */}
-      {/* {post.frontmatter.indexImage && <Img />} */}
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <Link to="/blog/">Back to blog</Link>
+      <div className="post-wrap">
+        <Link to="/blog/">Back to blog</Link>
+        <h1>{post.frontmatter.title}</h1>
+        <img src={ post.frontmatter.indexImage.childImageSharp.responsiveSizes.src } alt={ post.frontmatter.title }></img>
+        {/* {post.frontmatter.indexImage && <Img />} */}
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Link to="/blog/">Back to blog</Link>
+      </div>
     </div>
   );
 }
@@ -24,7 +27,11 @@ export const postQuery = graphql`
         path
         title
         indexImage {
-          id
+          childImageSharp{
+            responsiveSizes (maxWidth: 800) {
+              src
+            }
+          }
         }
       }
     }

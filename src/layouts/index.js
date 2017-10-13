@@ -20,7 +20,7 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet>
-      <title>"Theatre and Code"</title>
+      <title>Theatre and Code</title>
       <meta name='description' content='Theatre and Code is a website dedicated to the intersection of creative programming and theatre.'></meta>
       <meta name='keywords' content='theatre, code'></meta>
       <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/railscasts.css" />
