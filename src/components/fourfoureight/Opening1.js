@@ -22,14 +22,12 @@ class Opening1 extends Component {
         <div className="section-448 opening1-448">
           <h3>Preshow Projections: Idea One</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            The first idea for the preshow projections was rehashed and edited many times. I knew I wanted to incorporate movement with an uneasy quality to it. The type of movement that is uncomfortable to look at in the same way that dolls or "human-like" things can scare people. I was inspired by the Brownian examples on the p5.js website. The words dance with a controlled randomness that capture that exact upsetting quality.
           </p>
+
+          <p>The full projection starts with a blank screen and ends with a blank screen. The words "please open the curtains" slowly emerge one word at a time until the screen is covered in shaking words. Like cockroaches, the words swell and scatter until nothing is left but silence.</p>
+
+          <p>Because we had trouble with the file size of the complete video, this projection did not end up making it into the final production.</p>
 
           <video
             className="video-448"

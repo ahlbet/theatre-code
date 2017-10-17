@@ -14,6 +14,7 @@ const FourFourEight = () => (
     <div className="wrap-448">
       <Link to="/#projects">Back to projects</Link>
       <h1>Projections for <em>4.48 Psychosis</em></h1>
+      <p>By: Dylan Stratton</p>
       <div className="intro-448">
         <p>Content Warning: depression, suicidality, self-harm</p>
         <p><em>4.48 Psychosis</em> by Sarah Kane is a brutal and damning account of the inside of a mind battling depression and the medical industry that treats the illness. First performed in June of 2000 in London, <em>4.48</em> ruptured theatrical conventions of mental health on stage and continues to disrupt the cautious conversations about art and mental health.</p>
