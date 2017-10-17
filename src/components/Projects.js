@@ -20,21 +20,20 @@ class Projects extends Component {
               <Link to="/448/">Check out 4.48 Psychosis!</Link>
             </div>
             <div className="project">
-              <img src={project2} alt="Project Image" />
+              <img src={project3} alt="Project Image" />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                More projects coming soon!
               </p>
-              <Link to="/{project}">Check out Project Two!</Link>
+              {/* <Link to="/{project}">Check out Project Two!</Link> */}
             </div>
-            <div className="project">
+            {/* <div className="project">
               <img src={project3} alt="Project Image" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <Link to="/{project}">Check out Project 3!</Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -8,12 +8,12 @@ export default function Template({ data }) {
   return (
     <div>
       <div className="post-wrap">
-        <Link to="/blog/">Back to blog</Link>
+        <Link className="back-to-blog" to="/blog/">Back to blog</Link>
         <h1>{post.frontmatter.title}</h1>
         <img src={ post.frontmatter.indexImage.childImageSharp.responsiveSizes.src } alt={ post.frontmatter.title }></img>
         {/* {post.frontmatter.indexImage && <Img />} */}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <Link to="/blog/">Back to blog</Link>
+        <Link className="back-to-blog" to="/blog/">Back to blog</Link>
       </div>
     </div>
   );

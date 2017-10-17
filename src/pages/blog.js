@@ -5,14 +5,13 @@ import Img from 'gatsby-image';
 const Blog = ({ data }) => (
   <div>
     <div className="blog-wrap">
-      <Link to="/">Back to homepage</Link>
-      <h1>Blog currently under construction!</h1>
-      <h2>Posts</h2>
+      <Link className="back-to-home" to="/">Back to homepage</Link>
+      <h1>Theatre and Code Blog</h1>
       <div className="posts-wrap">
         <ul>
           {data.allMarkdownRemark.edges.map(post => (
-            <li className="post-wrap">
-              <Link key={post.node.id} to={post.node.frontmatter.path}>
+            <li key={post.node.id} className="post-wrap">
+              <Link to={post.node.frontmatter.path}>
                 {post.node.frontmatter.title}
               </Link>
               <img className="blog-thumbnail" src={ post.node.frontmatter.indexImage.childImageSharp.responsiveSizes.src } />
@@ -21,7 +20,7 @@ const Blog = ({ data }) => (
         </ul>
         {/* <img src={post.node.frontmatter.thumbnail} /> */}
       </div>
-      <Link to="/">Back to homepage</Link>
+      <Link className="back-to-home" to="/">Back to homepage</Link>
     </div>
   </div>
 );
