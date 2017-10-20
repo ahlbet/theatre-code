@@ -5,8 +5,15 @@ import Img from 'gatsby-image';
 const Blog = ({ data }) => (
   <div>
     <div className="blog-wrap">
-      <Link className="back-to-home" to="/">Back to homepage</Link>
-      <h1>Theatre and Code Blog</h1>
+      <div className="blog-header">
+        <div className="blog-header-wrap">
+          <Link className="back-to-home" to="/">
+            Back to homepage
+          </Link>
+          <h1>Theatre and Code Blog</h1>
+        </div>
+      </div>
+
       <div className="posts-wrap">
         <ul>
           {data.allMarkdownRemark.edges.map(post => (
@@ -14,13 +21,23 @@ const Blog = ({ data }) => (
               <Link to={post.node.frontmatter.path}>
                 {post.node.frontmatter.title}
               </Link>
-              <img className="blog-thumbnail" src={ post.node.frontmatter.indexImage.childImageSharp.responsiveSizes.src } />
+              <img
+                className="blog-thumbnail"
+                src={
+                  post.node.frontmatter.indexImage.childImageSharp
+                    .responsiveSizes.src
+                }
+              />
             </li>
           ))}
         </ul>
         {/* <img src={post.node.frontmatter.thumbnail} /> */}
       </div>
-      <Link className="back-to-home" to="/">Back to homepage</Link>
+      <div className="blog-footer">
+        <Link className="back-to-home" to="/">
+          Back to homepage
+        </Link>
+      </div>
     </div>
   </div>
 );
@@ -39,8 +56,8 @@ export const pageQuery = graphql`
             title
             path
             indexImage {
-              childImageSharp{
-                responsiveSizes (maxWidth: 600) {
+              childImageSharp {
+                responsiveSizes(maxWidth: 600) {
                   src
                 }
               }
