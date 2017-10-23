@@ -10,7 +10,11 @@ class Footer extends Component {
           <Link to="/blog/">Blog</Link>
           <p>
             Made by{' '}
-            <a target="_blank" href="http://www.dylanstratton.com/">
+            <a
+              rel="noreferrer noopener"
+              target="_blank"
+              href="http://www.dylanstratton.com/"
+            >
               Dylan Stratton
             </a>
           </p>
