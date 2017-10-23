@@ -6,15 +6,13 @@ const Blog = ({ data }) => (
   <div>
     <div className="blog-wrap">
       <div className="blog-header">
-        <div className="blog-header-wrap">
-          <Link className="back-to-home" to="/">
-            Back to homepage
-          </Link>
-          <h1>Theatre and Code Blog</h1>
-        </div>
+        <h1>Theatre and Code Blog</h1>
       </div>
 
       <div className="posts-wrap">
+        <Link className="back-to-home" to="/">
+          Back to homepage
+        </Link>
         <ul>
           {data.allMarkdownRemark.edges.map(post => (
             <li key={post.node.id} className="post-wrap">
