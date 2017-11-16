@@ -15,7 +15,7 @@
     "gatsby-transformer-remark": "^1.7.15",
     "gatsby-transformer-sharp": "^1.6.8",
     "react-highlight.js": "^1.0.5",
-    "styled-components": "^2.2.1"
+    "styled-components": "^2.2.3"
   },
   "keywords": [
     "gatsby"

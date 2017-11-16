@@ -1,0 +1,11 @@
+@mixin clearfix
+  &::after
+    content: ""
+    display: table
+    clear: both
+
+@mixin card-styles
+  padding: 3rem 5rem
+  background-color: rgba($color-white, .3)
+  box-shadow: 0 2rem 5rem rgba($color-black, .2)
+  text-align: center

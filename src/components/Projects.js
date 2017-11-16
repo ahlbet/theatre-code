@@ -8,7 +8,7 @@ import project3 from '../assets/images/project3.jpg';
 
 const StyledLink = styled(Link)`
   border-radius: 3px;
-  padding: 0.25em 1em;
+  padding: 0.25rem 1rem;
   background: transparent;
   color: black;
   border: 2px solid black;
@@ -24,33 +24,45 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <div id="projects" className="projects-wrap">
-          <h3>Projects</h3>
-          <div className="projects-grid">
-            <div className="project">
-              <img src={thumbnail448} alt="Project Image" />
-              <p>
-                The production of <em>4.48 Psychosis</em>, a play by Sarah Kane,
-                at the Phoenix Theater in Minneapolis used projections written
-                in JavaScript and p5.js.
-              </p>
-              <StyledLink to="/448/">Check out 4.48 Psychosis!</StyledLink>
+        <section id="projects" className="section-projects projects">
+          <h3 className="projects__heading">Projects</h3>
+          <div className="row">
+            <div className="col-1-of-2">
+              <div className="projects__project">
+                <p className="projects__info">
+                  The production of <em>4.48 Psychosis</em>, a play by Sarah
+                  Kane, at the Phoenix Theater in Minneapolis used projections
+                  written in JavaScript and p5.js.
+                </p>
+                <img
+                  className="projects__image"
+                  src={thumbnail448}
+                  alt="Project Image"
+                />
+                <StyledLink className="projects__link" to="/448/">
+                  Check out 4.48 Psychosis!
+                </StyledLink>
+              </div>
             </div>
-            <div className="project">
-              <img src={project3} alt="Project Image" />
-              <p>More projects coming soon!</p>
-              {/* <Link to="/{project}">Check out Project Two!</Link> */}
+            <div className="col-1-of-2">
+              <div className="projects__project">
+                <p className="projects__info projects__info--blog">
+                  We are still in the early stages of developing this project.
+                  In the meantime, check out our blog and contact us with
+                  project ideas or questions!
+                </p>
+                <img
+                  className="projects__image"
+                  src={project3}
+                  alt="Project Image"
+                />
+                <StyledLink className="projects__link" to="/blog/">
+                  Read our blog!
+                </StyledLink>
+              </div>
             </div>
-            {/* <div className="project">
-              <img src={project3} alt="Project Image" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <Link to="/{project}">Check out Project 3!</Link>
-            </div> */}
           </div>
-        </div>
+        </section>
       </div>
     );
   }

@@ -9,9 +9,10 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 const Button = styled(Link)`
+  font-size: 3rem;
   border-radius: 3px;
-  padding: 0.25em 1em;
-  margin: 0 1em;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
   background: transparent;
   color: white;
   border: 2px solid white;
@@ -25,16 +26,17 @@ const Button = styled(Link)`
 
 const IndexPage = () => (
   <div>
-    <div id="home" className="landing">
-      <h1>Theatre and Code</h1>
-      <p>
-        An exploration of the intersection of creative programming and the
-        theatrical arts.
-      </p>
-      {/* <Link className="toBlog" to="/blog/"> */}
-      <Button to="/blog/">Blog</Button>
-      {/* </Link> */}
-    </div>
+    <section id="home" className="section-landing">
+      <div className="landing">
+        <h1 className="landing__heading">Theatre and Code</h1>
+        <p className="landing__sub-heading">
+          The intersection of creative programming and the theatrical arts.
+        </p>
+        {/* <Link className="toBlog" to="/blog/"> */}
+        <Button to="/blog/">Blog</Button>
+        {/* </Link> */}
+      </div>
+    </section>
     <About />
     <Dream />
     <Projects />
