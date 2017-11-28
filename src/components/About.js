@@ -5,7 +5,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        <section className="section-about">
+        <section id="about" className="section-about">
           <div className="row">
             <div className="col-1-of-3">
               <div className="card">

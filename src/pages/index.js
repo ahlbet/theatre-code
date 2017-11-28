@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
+import Navigation from '../components/Navigation';
 import About from '../components/About';
 import Dream from '../components/Dream';
 import Projects from '../components/Projects';
@@ -26,6 +27,7 @@ const Button = styled(Link)`
 
 const IndexPage = () => (
   <div>
+    <Navigation />
     <section id="home" className="section-landing">
       <div className="landing">
         <h1 className="landing__heading">Theatre and Code</h1>
