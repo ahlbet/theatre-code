@@ -10,9 +10,10 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 const Button = styled(Link)`
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: 100;
   border-radius: 3px;
-  padding: 1rem 2rem;
+  padding: 1.5rem 3rem;
   margin: 0 1rem;
   background: transparent;
   color: white;
