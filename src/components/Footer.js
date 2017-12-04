@@ -5,18 +5,18 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        <div className="row footer__row">
-          <div className="col-1-of-3">
+        <ul className="footer__row">
+          <li className="footer__item">
             <Link className="footer__link" to="/#home">
               Top
             </Link>
-          </div>
-          <div className="col-1-of-3">
+          </li>
+          <li className="footer__item">
             <Link className="footer__link" to="/blog/">
               Blog
             </Link>
-          </div>
-          <div className="col-1-of-3">
+          </li>
+          <li className="footer__item">
             <p className="footer__credit">
               Made by{' '}
               <a
@@ -28,8 +28,8 @@ class Footer extends Component {
                 Dylan Stratton
               </a>
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </footer>
     );
   }

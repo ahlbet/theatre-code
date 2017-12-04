@@ -1,6 +1,10 @@
 .card
   height: 43rem
+  // padding: 10rem
   @include card-styles
+
+  @include respond(tab-port)
+    height: 36rem
 
   &__heading
     font-size: 3rem
