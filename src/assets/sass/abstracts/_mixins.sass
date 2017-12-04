@@ -5,13 +5,13 @@
     clear: both
 
 @mixin card-styles
-  padding: 3rem 5rem
+  padding: 2rem 4rem 0
   background-color: rgba($color-white, .3)
   box-shadow: 0 2rem 5rem rgba($color-black, .2)
   text-align: center
 
   @include respond(tab-port)
-    padding: 5rem 7rem
+    padding: 3rem 5rem
 
 @mixin respond($breakpoint)
   @if $breakpoint == phone
