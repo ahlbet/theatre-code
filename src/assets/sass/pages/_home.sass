@@ -1,10 +1,13 @@
 .section-landing
   min-height: 100vh
   min-width: 100vw
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, $overlay-opacity-heavy), rgba($color-primary-dark, $overlay-opacity-heavy)), url('../images/jumbo6.jpg')
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, $overlay-opacity-heavy), rgba($color-primary-dark, $overlay-opacity-heavy)), url(../images/jumbo6-small.jpg)
   background-size: cover
   background-position: center
   // background-attachment: fixed
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5rem), (min-width: 125rem)
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, $overlay-opacity-heavy), rgba($color-primary-dark, $overlay-opacity-heavy)), url(../images/jumbo6.jpg)
 
   .landing
     width: 100%
@@ -37,10 +40,13 @@
 
 .section-dream
   padding: 18rem 0
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, $overlay-opacity-heavy), rgba($color-primary-light, $overlay-opacity-heavy)), url('../images/blog-header.jpg')
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, $overlay-opacity-heavy), rgba($color-primary-light, $overlay-opacity-heavy)), url(../images/blog-header-small.jpg)
   background-size: cover
   background-position: center
   // background-attachment: fixed
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5rem), (min-width: 125rem)
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, $overlay-opacity-heavy), rgba($color-primary-dark, $overlay-opacity-heavy)), url(../images/blog-header.jpg)
 
   @include respond(tab-port)
     padding: 13rem 0
@@ -78,10 +84,13 @@
 
 .section-contact
   padding: 25rem 0
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, $overlay-opacity-light), rgba($color-primary-light, $overlay-opacity-light)), url('../images/contact.jpg')
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, $overlay-opacity-light), rgba($color-primary-light, $overlay-opacity-light)), url(../images/contact-small.jpg)
   background-size: cover
   background-position: bottom
   // background-attachment: fixed
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5rem), (min-width: 125rem)
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, $overlay-opacity-light), rgba($color-primary-dark, $overlay-opacity-light)), url(../images/contact.jpg)
 
   @include respond(tab-port)
     padding: 10rem 0

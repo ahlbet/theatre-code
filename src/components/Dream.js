@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 
-import codeDream from '../assets/images/code-dream.jpg';
-import theatreDream from '../assets/images/theatre-dream.jpg';
+import codeDream from '../assets/images/code-dream-small.jpg';
+import theatreDream from '../assets/images/theatre-dream-small.jpg';
 
 class Dream extends Component {
   render() {

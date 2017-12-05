@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-import thumbnail448 from '../assets/images/448-thumbnail.jpg';
+import thumbnail448 from '../assets/images/448-thumbnail-small.jpg';
 import project2 from '../assets/images/project2.jpg';
-import project3 from '../assets/images/project3.jpg';
+import project3 from '../assets/images/project3-small.jpg';
 
 const StyledLink = styled(Link)`
   border-radius: 3px;

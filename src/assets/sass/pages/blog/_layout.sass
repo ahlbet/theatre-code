@@ -2,13 +2,16 @@
   font-size: $default-font-size
 
   .blog-header
-    background-image: url('../images/blog-header.jpg')
+    background-image: url(../images/blog-header-small.jpg)
     background-size: cover
     background-position: center
     min-height: 500px
     display: flex
     justify-content: center
     align-items: center
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5rem), (min-width: 125rem)
+      background-image: url(../images/blog-header.jpg)
 
     h1
       font-size: 4rem

@@ -1,8 +1,8 @@
-const path = require("path");
+const path = require('path');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  const postTemplate = path.resolve("src/templates/post.js");
+  const postTemplate = path.resolve('src/templates/post.js');
 
   return graphql(`
     {
@@ -16,8 +16,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               title
               date
               indexImage {
-                childImageSharp{
-                  responsiveSizes (maxWidth: 800) {
+                childImageSharp {
+                  responsiveSizes(maxWidth: 800) {
                     src
                   }
                 }
